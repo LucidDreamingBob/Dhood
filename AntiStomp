@@ -1,0 +1,73 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MainLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local AntiStomp = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local LP = game.Players.LocalPlayer
+
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.835151494, 0, 0.814723909, 0)
+Main.Size = UDim2.new(0.143030301, 0, 0.146012276, 0)
+Main.Active = true
+Main.Draggable = true
+
+UICorner.Parent = Main
+
+MainLabel.Name = "MainLabel"
+MainLabel.Parent = Main
+MainLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainLabel.BackgroundTransparency = 1.000
+MainLabel.BorderSizePixel = 0
+MainLabel.Position = UDim2.new(0.0762711838, 0, 0.075630255, 0)
+MainLabel.Size = UDim2.new(0.847457647, 0, 0.268907577, 0)
+MainLabel.ZIndex = 5
+MainLabel.Font = Enum.Font.ArialBold
+MainLabel.Text = "Anti Stomp"
+MainLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainLabel.TextScaled = true
+MainLabel.TextSize = 14.000
+MainLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = MainLabel
+UITextSizeConstraint.MaxTextSize = 21
+
+AntiStomp.Name = "AntiStomp"
+AntiStomp.Parent = Main
+AntiStomp.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+AntiStomp.Position = UDim2.new(0.0762711838, 0, 0.420168072, 0)
+AntiStomp.Size = UDim2.new(0.847457647, 0, 0.420168072, 0)
+AntiStomp.ZIndex = 0
+AntiStomp.Font = Enum.Font.ArialBold
+AntiStomp.Text = "Anti Stomp"
+AntiStomp.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiStomp.TextScaled = true
+AntiStomp.TextSize = 14.000
+AntiStomp.TextWrapped = true
+AntiStomp.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Head.Head:Destroy()
+	game.Players.LocalPlayer.Character.Head.NeckRigAttachment:Destroy()
+	game.Players.LocalPlayer.Character.Head.FaceFrontAttachment:Destroy()
+	game.Players.LocalPlayer.Character.Head.HatAttachment:Destroy()
+	game.Players.LocalPlayer.Character.Head.HairAttachment:Destroy()
+	game.Players.LocalPlayer.Character.Head.Neck:Destroy()
+	game.Players.LocalPlayer.Character.Head.OriginalSize:Destroy()
+end)
+
+UICorner_2.Parent = AntiStomp
+
+UITextSizeConstraint_2.Parent = AntiStomp
+UITextSizeConstraint_2.MaxTextSize = 40
+
+UIAspectRatioConstraint.Parent = Main
+UIAspectRatioConstraint.AspectRatio = 1.983
