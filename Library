@@ -85,16 +85,16 @@ local function initLibrary()
 
         local ui_Settings = {
             mainColor = Color3.fromRGB(0, 0, 0);
-            bottomColor = Color3.fromRGB(34, 34, 34);
-            borderColor = Color3.fromRGB(42, 42, 42);
+            bottomColor = Color3.fromRGB(0, 0, 0);
+            borderColor = Color3.fromRGB(0, 0, 0);
             scrollingBarColor = Color3.fromRGB(255, 255, 255);
             toggleColor = Color3.fromRGB(0, 0, 0);
             toggleBorderColor = Color3.fromRGB(255, 255, 255);
-            boxColor = Color3.fromRGB(32, 32, 32);
+            boxColor = Color3.fromRGB(0, 0, 0);
             boxBorderColor = Color3.fromRGB(255, 255, 255);
-            gradientColorSection = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(102, 41, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(122, 41, 255))};
-            gradientColor = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(102, 41, 255)), ColorSequenceKeypoint.new(0, Color3.fromRGB(142, 61, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(210, 74, 255))};
-            shadowGradientColor = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(20, 20, 20)), ColorSequenceKeypoint.new(1, Color3.fromRGB(36, 36, 36))};
+            gradientColorSection = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(122, 255, 255))};
+            gradientColor = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(210, 74, 255))};
+            shadowGradientColor = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0))};
         };
 
         UserInputService.InputBegan:Connect(function(input)
