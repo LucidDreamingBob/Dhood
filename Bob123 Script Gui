@@ -1,0 +1,82 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tayo-sources/library/master/aztupnew"))();
+
+local autoscripts = library:CreateSection("Scripts");
+
+
+
+autoscripts:Button("Animation Changer",  function()
+
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LucidDreamingBob/Dhood/main/Animation", true))()
+
+
+
+end);
+
+
+
+
+
+
+autoscripts:Button("Avatar Editor",  function()
+
+
+
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LucidDreamingBob/AvatarEditorScript/main/Avatareditor"))()
+
+
+
+end);
+
+
+
+
+
+autoscripts:Button("Silent Aim",  function()
+
+
+
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LucidDreamingBob/Dhood/main/Saim"))()
+
+
+
+end);
+
+
+
+
+
+autoscripts:Button("Hood gui",  function()
+
+
+
+
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/LucidDreamingBob/Dhood/main/Hood%20Gui'))()
+
+
+
+end);
+
+
+
+
+
+autoscripts:Button("Infinite Yield",  function()
+
+
+
+
+   loadstring(game:HttpGet('loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()'))()
+
+
+
+end);
+
+
+
+
+
+
+library:Ready();
